@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C3AA6ACE44E7E67CED83A69 /* Pods_WATiR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542925CF37786B81D140E20A /* Pods_WATiR.framework */; };
 		722B984C2564662D0019BCF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722B984B2564662D0019BCF9 /* AppDelegate.swift */; };
 		722B984E2564662D0019BCF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722B984D2564662D0019BCF9 /* SceneDelegate.swift */; };
 		722B98502564662D0019BCF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722B984F2564662D0019BCF9 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		542925CF37786B81D140E20A /* Pods_WATiR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WATiR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F80E81F6B8F7F7526BEC043 /* Pods-WATiR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WATiR.release.xcconfig"; path = "Target Support Files/Pods-WATiR/Pods-WATiR.release.xcconfig"; sourceTree = "<group>"; };
 		722B98482564662D0019BCF9 /* WATiR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WATiR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		722B984B2564662D0019BCF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		722B984D2564662D0019BCF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		722B98542564662F0019BCF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		722B98572564662F0019BCF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		722B98592564662F0019BCF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6DE0A21DAD34EC3523A77A3 /* Pods-WATiR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WATiR.debug.xcconfig"; path = "Target Support Files/Pods-WATiR/Pods-WATiR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C3AA6ACE44E7E67CED83A69 /* Pods_WATiR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B8BCD245DE84C1EA846E296 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6DE0A21DAD34EC3523A77A3 /* Pods-WATiR.debug.xcconfig */,
+				6F80E81F6B8F7F7526BEC043 /* Pods-WATiR.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		722B983F2564662D0019BCF9 = {
 			isa = PBXGroup;
 			children = (
 				722B984A2564662D0019BCF9 /* WATiR */,
 				722B98492564662D0019BCF9 /* Products */,
+				2B8BCD245DE84C1EA846E296 /* Pods */,
+				9FB8DC5E9E0CE08FA8E26EB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = WATiR;
 			sourceTree = "<group>";
 		};
+		9FB8DC5E9E0CE08FA8E26EB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				542925CF37786B81D140E20A /* Pods_WATiR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 722B985C2564662F0019BCF9 /* Build configuration list for PBXNativeTarget "WATiR" */;
 			buildPhases = (
+				29EE73081F5982EF3D306327 /* [CP] Check Pods Manifest.lock */,
 				722B98442564662D0019BCF9 /* Sources */,
 				722B98452564662D0019BCF9 /* Frameworks */,
 				722B98462564662D0019BCF9 /* Resources */,
+				0CA696458BE31074E5F8D5C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CA696458BE31074E5F8D5C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WATiR/Pods-WATiR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WATiR/Pods-WATiR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WATiR/Pods-WATiR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29EE73081F5982EF3D306327 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WATiR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		722B98442564662D0019BCF9 /* Sources */ = {
@@ -283,6 +351,7 @@
 		};
 		722B985D2564662F0019BCF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6DE0A21DAD34EC3523A77A3 /* Pods-WATiR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +370,7 @@
 		};
 		722B985E2564662F0019BCF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F80E81F6B8F7F7526BEC043 /* Pods-WATiR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
